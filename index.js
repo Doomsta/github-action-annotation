@@ -6,7 +6,7 @@ const lineReader = require('line-by-line');
 // https://staticcheck.io/
 // https://staticcheck.io/docs/running-staticcheck/cli/formatters/#json
 (function () {
-    const file = 'staticcheck.json'
+    const file = core.getInput('staticcheck');
     if (!fs.existsSync(file)) {
         return
     }
@@ -48,7 +48,7 @@ const lineReader = require('line-by-line');
 // eslint
 // https://eslint.org/docs/latest/extend/custom-formatters#the-results-argument
 (function () {
-    const file = 'eslint.json'
+    const file = core.getInput('eslint');
     if (!fs.existsSync(file)) {
         return
     }

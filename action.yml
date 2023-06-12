@@ -3,3 +3,12 @@ description: 'Annotate your code with GitHub Actions based on lint output'
 runs:
   using: 'node16'
   main: 'index.js'
+inputs:
+  staticcheck:
+    description: 'Result of staticcheck'
+    required: false
+    default: 'staticcheck.json'
+  eslint:
+    description: 'Result of eslint'
+    required: false
+    default: 'eslint.json'
