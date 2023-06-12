@@ -1,0 +1,5 @@
+name: 'annotations'
+description: 'Annotate your code with GitHub Actions based on lint output'
+runs:
+  using: 'node16'
+  main: 'index.js'

@@ -1,0 +1,15 @@
+{
+  "code": "SA4006",
+  "severity": "error",
+  "location": {
+    "file": "/usr/lib/go/src/fmt/print.go",
+    "line": 1082,
+    "column": 15
+  },
+  "end": {
+    "file": "/usr/lib/go/src/fmt/print.go",
+    "line": 1082,
+    "column": 25
+  },
+  "message": "this value of afterIndex is never used"
+}
